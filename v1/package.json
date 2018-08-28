@@ -1,0 +1,22 @@
+{
+  "name": "reddit-lite",
+  "version": "1.0.0",
+  "description": "reddit clone with node-express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "ejs",
+    "es6"
+  ],
+  "author": "Ephraim",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
