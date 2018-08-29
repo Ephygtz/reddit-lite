@@ -1,0 +1,10 @@
+<% include partials/header.ejs %>
+<h1>Timeline!!</h1>
+<h3>View all Posts posted</h3>
+
+<% posts.forEach((post)=>{ %>
+    <li> <%= post.title %></li>
+    <li><img src=" <%= post.image %> "/> </li>
+<% }); %>
+
+<% include partials/footer.ejs %>
