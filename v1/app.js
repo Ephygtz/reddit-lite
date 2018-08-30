@@ -18,11 +18,22 @@ app.get("/", (req, res) => {
 app.get("/timeline", (req, res) => {
     //array with unpersisted values to display on timeline
     const posts = [
-        {title: "Deep field", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhREgpHLcp7-PKXxgX4AZcJ1jl9EJdpn4WY_uLsrLL7dTLeFXeDw"},
-        {title: "Telescope", image: "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwiY6Yiht5LdAhVMJhoKHRflAbQQjRx6BAgBEAU&url=https%3A%2F%2Fwww.madabouthorror.co.uk%2Fproduct%2Fgoosebumps-slappy-the-dummy-mask%2F&psig=AOvVaw3P2nauXDKr_7-fnbffcnQi&ust=1535637090658853"},
-        {title: "Deep field", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhREgpHLcp7-PKXxgX4AZcJ1jl9EJdpn4WY_uLsrLL7dTLeFXeDw"}
+        {title: "Chilling", image: "https://photosforclass.com/download/pixabay-2425121?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2Feb31b30a29f6003ed1584d05fb1d4e97e07ee3d21cac104496f5c47ea3eab5bc_960.jpg&user=5688709"},
+        {title: "Telescope", image: "https://photosforclass.com/download/pixabay-3380548?webUrl=https%3A%2F%2Fpixabay.com%2Fget%2Fea36b90f2df0093ed1584d05fb1d4e97e07ee3d21cac104496f5c47ea3eab5bc_960.jpg&user=pixel2013"},
+        {title: "Deep field", image: "https://pixabay.com/get/ef31b60a2afc1c22d2524518b7444795ea76e5d004b0144290f5c67da0edb1_340.jpg"}
     ];
     res.render("timeline", {posts : posts});
+});
+
+app.post("/timeline", (req, res) => {
+    //get user input
+    // add to posts array
+    //redirect
+});
+
+app.get("/timeline/new", (req, res) => {
+    //route to add new post
+    res.render("newPost");
 });
 
 

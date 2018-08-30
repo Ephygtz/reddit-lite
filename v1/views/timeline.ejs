@@ -1,10 +1,33 @@
 <% include partials/header.ejs %>
-<h1>Timeline!!</h1>
-<h3>View all Posts posted</h3>
 
-<% posts.forEach((post)=>{ %>
-    <li> <%= post.title %></li>
-    <li><img src=" <%= post.image %> "/> </li>
-<% }); %>
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <div class="alert alert-success" role="alert">
+                <h3>Timeline</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <% posts.forEach((post)=>{ %>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <%= post.title %>
+                </div>
+                <div class="panel-body thumbnail">
+                   <img src="<%= post.image %>" alt=""> 
+                </div>
+            </div>
+        </div>
+        <% }); %>
+    </div>
+</div>
+
+
+
+    
+    
+
 
 <% include partials/footer.ejs %>
